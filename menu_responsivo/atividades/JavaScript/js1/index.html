@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calcular combustível</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="calcular.js"></script>
+  </head>
+  <body>
+    <h1>Calcular combustivel</h1>
+    <p>Veja abaixo qual é mais vantajoso: Gasolina ou etanol.</p>
+    <img src="imagens/m1.jpg" id="imagem" />
+    <p>Insira o preço de cada, abaixo.</p>
+    <form name="frdados">
+      <input
+        type="text"
+        name="txtetanol"
+        size="10"
+        placeholder="Etanol"
+        autofocus
+      />
+      <input type="text" name="txtgasolina" size="10" placeholder="Gasolina" />
+      <input type="button" value="Calcular" onclick="melhor()" />
+      <input type="reset" value="Limpar" onclick="limpar()" />
+    </form>
+  </body>
+</html>
